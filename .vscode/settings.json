@@ -1,0 +1,6 @@
+{
+    "editor.tabSize": 2,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.cursorBlinking": "smooth",
+    "editor.glyphMargin": false
+}

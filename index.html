@@ -1,12 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Waxom</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Waxom</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Raleway:400,500,800|Roboto" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+  <header class="header">
+    <div class="container">
+      <div class="navbar">
+          <div class="logo">
+            <img src="img/logo.png" alt="waxom logo" class="logo__image">
+            <strong class="logo__text">Waxom</strong>
+          </div>
+          <ul class="menu">
+            <li class="menu__item"><a href="#" class="menu__link"></a></li>
+            <li class="menu__item menu__item_active"><a href="#" class="menu__link">Home</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">About Us</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Features</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Pricing</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Shortcodes</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+            <li class="menu__item">
+              <form action="post" class="search-form">
+                <button class="search-form__button">Search it</button>
+              </form>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="big-slider">
+    <!-- hero-slide -->
+    <div class="hero-slide hero-slide-1">
+      <div class="hero-slide__wrap">
+          <div class="hero">
+            <div class="hero-wrap">
+                <div class="hero__pretitle">Unique and Modern Design</div>
+                <div class="hero__title">Portfolio PSD Template</div>
+                <div class="hero__subtitle">
+                  Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+                </div>
+                <button class="hero__button">Get Started</button>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- hero-slide -->
+
+    <!-- hero-slide -->
+    <div class="hero-slide hero-slide-2">
+      <div class="hero-slide__wrap">
+          <div class="hero">
+            <div class="hero-wrap">
+                <div class="hero__pretitle">Unique and Modern Design</div>
+                <div class="hero__title">Portfolio PSD Template</div>
+                <div class="hero__subtitle">
+                  Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+                </div>
+                <button class="hero__button">Get Started</button>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- hero-slide -->
+    <!-- hero-slide -->
+    <div class="hero-slide hero-slide-3">
+      <div class="hero-slide__wrap">
+          <div class="hero">
+            <div class="hero-wrap">
+                <div class="hero__pretitle">Самый люччи предложения</div>
+                <div class="hero__title">Шаблоны на каждфй день</div>
+                <div class="hero__subtitle">
+                  Не вызывает сомнений, что выбранный нами инновационный путь обеспечивает широкому кругу специалистов систему массового участия.
+                </div>
+                <button class="hero__button">Get Started</button>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- hero-slide -->
+  </div>
+
+
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.big-slider').slick({
+      dots: true,
+      speed: 500
+    });
+  });
+</script>
 </body>
+
 </html>
