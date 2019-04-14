@@ -1,0 +1,130 @@
+.recent
+  &-heading
+    margin-bottom: 40px
+    text-align: center
+    &__title
+      font-size: 30px
+      color: #555
+      font-weight: 600
+      margin-bottom: 30px
+    &__text
+      +mons
+      font-size: 16px
+      font-weight: 300
+      color: #8c8c8c
+      line-height: 1.75
+      padding: 0 200px
+
+// multi=================================
+
+.recent-slider
+  // position: relative
+
+.slick-prev,.slick-next
+  position: absolute
+  bottom: -50px
+  left: 50%
+  transform: translateX(-50%)
+  width: 21px
+  height: 21px
+  background: url(../img/round-arrow.png)
+  border: none
+  text-indent: 200%
+  overflow: hidden
+  white-space: nowrap
+  cursor: pointer
+
+.slick-prev
+  margin-left: -20px
+  transform: rotate(180deg)
+
+.slick-next
+  margin-left: 20px
+
+.multi .slick-dots
+  position: absolute
+  left: 30px
+  top: 100px
+  li
+    display: inline-block
+    margin: 0 5px
+  li button
+    border: none
+    background-color: #fff
+    opacity: 0.3
+    color: transparent
+    width: 11px
+    height: 11px
+    border-radius: 50%
+    text-indent: 200%
+    overflow: hidden
+    white-space: nowrap
+    cursor: pointer
+  .slick-active button
+    background-color: transparent
+    border: 2px solid #000
+    opacity: 1
+    position: relative
+    top: -1px
+    padding: 0
+    width: 15px
+    height: 15px
+
+.multi
+  &__item__inner
+    width: 370px
+  &__image
+    position: relative
+  &__date
+    position: absolute
+    left: 20px
+    top: 20px
+    &__day
+      background-color: #363636
+      width: 50px
+      height: 35px
+      display: flex
+      justify-content: center
+      align-items: center
+      +mons
+      font-size: 24px
+      font-weight: 300
+      color: #fff
+      border-top-left-radius: 3px
+      border-top-right-radius: 3px
+    &__month
+      background-color: #252525
+      width: 50px
+      height: 25px
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 12px
+      color: #fff
+      border-bottom-left-radius: 3px
+      border-bottom-right-radius: 3px
+  &__content
+    background-color: #f8f8f8
+    padding: 30px
+  &__title
+    font-size: 20px
+    font-weight: 500
+    color: #555
+    margin-bottom: 20px
+  &__text
+    +mons
+    font-size: 14px
+    font-weight: 300
+    color: #8c8c8c
+    line-height: 1.5
+    margin-bottom: 25px
+  &__link
+    +mons
+    font-size: 14px
+    font-weight: 300
+    line-height: 1.45
+    color: #c7b299
+    &::after
+      content: '\25ba'
+      font-size: 11px
+      margin-left: 5px

@@ -23,8 +23,12 @@
     background-image: url(../img/slick-arrow.png)
     background-size: contain
     background-color: transparent 
+    opacity: 0.5
     border: none
     cursor: pointer
+    transition: .3s
+    &:hover
+      opacity: 1
   .slick-dots
     position: absolute
     bottom: 20px
@@ -54,8 +58,8 @@
             border-style: none
 
     .slick-active
-      width: 15px
-      height: 15px
+      width: 13px
+      height: 13px
       border: 2px solid #d3c1ad
       background-color: transparent
       position: relative
@@ -89,14 +93,3 @@
 .hero-slide-3
   .hero-slide__wrap
     background-image: url(../img/slide-3.jpg)
-
-
-// flexslider=================================
-
-.flexslider
-  .slides
-    li 
-      background-color: #ddd
-      margin-left: -40px
-    .flex-active-slide
-      background-color: #aaa

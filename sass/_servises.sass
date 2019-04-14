@@ -1,0 +1,30 @@
+.servises
+  // padding: 80px 0
+.servise
+  padding: 0 15px
+  text-align: center
+  &__image
+    margin-bottom: 30px
+  &__title
+    font-size: 22px
+    font-weight: 600
+    color: #555555
+    margin-bottom: 20px
+    &_active
+      color: #c7b299
+  &__text
+    +mons 
+    font-size: 14px
+    font-weight: 300
+    color: #8c8c8c
+    line-height: 1.7
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      bottom: -30px
+      width: 70px
+      height: 2px
+      background-color: #f1eee9

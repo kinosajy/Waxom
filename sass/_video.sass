@@ -1,0 +1,89 @@
+.video-section
+  padding: 0
+
+.video
+  position: relative
+  padding-bottom: 41.9%
+  height: 0
+  overflow: hidden
+  background-image: url(../img/video-bg.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+
+.video-inner
+  color: #fff
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  text-align: center
+  &__button
+    width: 100px
+    height: 100px
+    display: inline-block
+    margin-bottom: 40px
+    border-radius: 50%
+    text-indent: 200%
+    overflow: hidden
+    white-space: nowrap
+    background: url(../img/icon-play.png) no-repeat center
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      background-color: #000
+      opacity: 0.3
+      z-index: -1
+  &__title
+    font-size: 30px
+    font-weight: 500
+    margin-bottom: 30px
+  &__text
+    +mons
+    font-size: 16px
+    font-weight: 300
+    line-height: 1.75
+    margin-bottom: 40px
+  &__time
+    +mons
+    font-size: 14px
+    color: #c7b299
+
+#popupVid 
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 200
+
+#popupVid iframe 
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 200
+  border: none
+
+.close-video 
+  position: relative
+  z-index: 300
+  top: 10px
+  left: 10px
+  color: #fff
+  font-size: 13px
+  text-shadow: 0 1px 2px #000
+  font-family: 'Jura', sans-serif
+
+.close-video span 
+  width: 30px
+  height: 30px
+  background: #aaa
+  position: absolute
+
+.close-video span:before 
+  border-top: 2px solid #fff

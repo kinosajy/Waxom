@@ -1,0 +1,52 @@
+.ideas
+  background-color: #fbfaf8
+  text-align: center
+  padding-bottom: 0
+  &-rate 
+    padding: 50px 0
+    background-image: linear-gradient(to right, #211b19, #4e3427)
+    &__title
+      font-size: 28px
+      color: #fff
+      &
+        strong
+          color: #c7b299
+          font-weight: 400
+    &__subtitle
+      font-size: 18px
+      font-weight: 300
+      color: #615855
+  &-inner
+    text-align: left
+    width: 100%
+    max-width: 1170px
+    margin: auto
+
+.ideas-heading
+  margin-bottom: 100px
+  &__title
+    font-size: 30px
+    color: #555555
+    font-weight: 600
+    margin-bottom: 24px
+  &__text
+    font-size: 16px
+    +mons 
+    font-weight: 300
+    line-height: 1.75
+    color: #8c8c8c
+    padding: 0 200px
+    margin-bottom: 40px
+
+.ideas-image
+  display: flex
+  position: relative
+  &_left
+    margin-left: -30px
+  &_right
+    margin-right: -30px
+  &_center
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 0

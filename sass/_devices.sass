@@ -1,0 +1,41 @@
+.devices
+  display: flex
+  &-section
+    background-color: #fbfaf8
+    padding-bottom: 0
+  &-image
+    flex: 0 0 40%
+  &-info
+    flex: auto
+    padding-top: 100px
+  &__title
+    font-size: 30px
+    color: #555
+    font-weight: 600
+    margin-bottom: 40px
+  &__text
+    +mons
+    font-size: 16px
+    font-weight: 300
+    line-height: 1.75
+    margin-bottom: 45px
+    color: #8c8c8c
+  &__list
+    +mons
+    font-size: 16px
+    font-weight: 300
+    color: #8c8c8c
+    line-height: 2
+    &__item
+      position: relative
+      padding-left: 100px
+      &::before
+        content: ''
+        position: absolute
+        width: 100px
+        height: 21px
+        left: 10px
+        top: 5px
+        background-image: url(../img/round-arrow.png)
+        background-repeat: no-repeat
+        background-position: center

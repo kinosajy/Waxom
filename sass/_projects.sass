@@ -1,0 +1,103 @@
+.projects
+  text-align: center
+  &-heading
+    text-align: center
+    &__title
+      font-size: 30px
+      color: #555 
+      font-weight: 600
+      margin-bottom: 24px
+    &__text
+      +mons 
+      font-size: 16px
+      color: #heading
+      font-weight: 300
+      line-height: 1.75
+      padding: 0 200px
+      margin-bottom: 40px
+
+.tt-panel-inner
+  display: flex
+  margin-left: -15px
+  margin-right: -15px
+  flex-wrap: wrap
+
+.projects-item
+  padding: 15px
+  &__image
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      right: 0
+      bottom: 0
+      left: 0
+      top: 0
+      background-color: #000
+      opacity: 0
+      transition: opacity .2s linear
+    &::after
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+      width: 32px
+      height: 32px
+      background: #fff
+      opacity: 0
+      transition: opacity .2s linear
+  &-heading
+    text-align: left
+    background-color: #fbfaf8
+    padding: 30px
+    position: relative
+    transition: background-color .2s linear
+    &::before
+      content: ''
+      position: absolute
+      left: 20px
+      top: -27px
+      border: 15px solid transparent
+      border-bottom: 12px solid #fbfaf8
+      display: block
+      width: 0
+      height: 0
+      transition: border-bottom-color .2s linear
+    &__title
+      font-size: 20px
+      font-weight: 500
+      color: #c7b299
+      margin-bottom: 10px
+      transition: color .2s linear
+    &__subtitLe
+      +mons
+      font-size: 14px
+      font-weight: 300
+      color: #d1d1d1
+      transition: color .2s linear
+  &:hover
+    .projects-item
+      &__image::before
+        opacity: 0.3
+      &__image::after
+        opacity: 1
+      &-heading
+        background-color: #362f2d
+        &::before
+          border-bottom-color: #362f2d
+        &__title
+          color: #fff
+        &__subtitLe
+          color: #c7b299
+  
+.loadmore-button
+  font-size: 14px
+  font-weight: 800
+  color: #fff
+  padding: 17px 45px
+  border: none
+  text-transform: uppercase
+  border-radius: 3px;
+  box-shadow: inset 0px -3px 0 0 #736357
+  background-color: #998675

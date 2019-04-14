@@ -1,0 +1,38 @@
+.stats-section
+  height: 300px
+  padding: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  background-image: linear-gradient(to right, #211b19, #4e3427)
+
+.stats
+  text-align: center
+  color: #fff
+  display: flex
+  &-item
+    padding: 0 50px
+    &__image
+      margin-bottom: 30px
+    &__num
+      +mons
+      font-size: 48px
+      font-weight: 300
+      line-height: .75
+      margin-bottom: 20px
+    &__title
+      +mons
+      font-size: 14px
+      font-weight: 300
+      line-height: 1.45
+      color: #c7b299
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        bottom: -30px
+        left: 50%
+        margin-left: -15px
+        width: 30px
+        height: 2px
+        background-color: #fff
