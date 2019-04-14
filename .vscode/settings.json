@@ -2,9 +2,9 @@
     "editor.tabSize": 2,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.cursorBlinking": "smooth",
-    "editor.glyphMargin": false,
     "editor.autoIndent": false,
     "editor.dragAndDrop": false,
     "editor.links": false,
-    "editor.matchBrackets": false
+    "editor.matchBrackets": false,
+    "workbench.activityBar.visible": false
 }
